@@ -9,19 +9,13 @@ package javaapplication1;
  *
  * @author T-107
  */
-public class JavaApplication1 {
+public class wrappers {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("mi primer java");
-     Imc ojete=new Imc();
-     
-           
-        System.out.println(ojete.calcular());
-        
-            }
+    }
     
 }

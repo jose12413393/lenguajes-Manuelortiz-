@@ -25,7 +25,7 @@ public class Imc {
                   int i=2;
                   long l=2;
                  // reasignamos 
-  /*casting forzado */     
+               /*casting forzado */     
                   b=(byte)i;
                   l=i;
                   s=(short)l;
@@ -41,7 +41,37 @@ public class Imc {
         
         float resultado=peso/(altura*altura);
         return resultado;
+        
+        
+             if(resultado >= 20 );
+              
+             
+                 System.out.println("moriras");
+                 
+             
+            if(resultado >=20 & resultado<25)
+                System.out.println("bien sano");
+            
+            if(resultado >=25 &  resultado<30)
+              System.out.println("tamal");
+               
+            if(resultado>=30)
+               System.out.println("panzon");
+             
+        
+         
+        
+            
+        
     }
- 
+        
+        
+  public Imc(float p,float a){
+      peso=p;
+      altura=a;
+      
+  }
+  
+  }
     
-}
+
