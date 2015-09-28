@@ -37,34 +37,42 @@ public class Imc {
                   
       }
       
-        public float calcular() {
+        public float calcular( ) {
         
         float resultado=peso/(altura*altura);
-        return resultado;
-        
-        
-             if(resultado >= 20 );
-              
-             
-                 System.out.println("moriras");
-                 
-             
-            if(resultado >=20 & resultado<25)
-                System.out.println("bien sano");
-            
-            if(resultado >=25 &  resultado<30)
-              System.out.println("tamal");
-               
-            if(resultado>=30)
-               System.out.println("panzon");
-             
-        
-         
-        
-            
-        
+       return resultado;
     }
         
+        public String mensaje (float Valor){
+            
+            String resultado="";
+            
+            
+                if(Valor >0 & Valor<=20)
+                 
+             {
+               resultado="moriras de anorexia";
+               
+             }
+                 
+             if(Valor >20 & Valor<=25) 
+            {
+                resultado="bien sano";
+            }
+            if(Valor >25 &  Valor<=30)
+            {
+             resultado="tamal";
+              
+            }
+            if(Valor>30)
+            {
+              resultado="panzon";
+             
+            }
+            
+            return resultado;
+        }
+      
         
   public Imc(float p,float a){
       peso=p;
